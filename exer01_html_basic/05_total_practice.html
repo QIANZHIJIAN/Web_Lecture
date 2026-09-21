@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>나의 웹 프로필</title>
+</head>
+<body>
+<header>
+  <h1>나의 웹 프로필</h1>
+  <p>HTML 기본 태그를 활용하여 만든 웹페이지입니다.</p >
+</header>
+
+<nav>
+  <a href="#intor ">소개</a > |
+  <a href="#interest">관심 분야</a > |
+  <a href="#schedule">학습 계획</a > |
+  <a href="#contact">문의하기</a >
+</nav>
+<main>
+
+    <section id="intro">
+      <h2>1. 자기소개</h2>
+      <article>
+        <p>안녕하세요!</p >
+        <p>저는 웹 프로그래밍을 공부하고 있습니다.</p >
+        <p>현재 HTML5의 기본 구조와 다양한 태그를 학습하고 있습니다.</p >
+        <p>앞으로 CSS와 JavaScript도 공부할 예정입니다.</p >
+        <img src="profile.png" alt="프로필 사진" width="200">
+      </article>
+    </section>
+
+    <section id="interest">
+      <h2>2. 관심 분야</h2>
+      <article>
+        <h3>관심 있는 기술</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+        </ul>
+
+        <h3>학습 순서</h3>
+        <ol>
+          <li>HTML 배우기</li>
+          <li>CSS 배우기</li>
+          <li>JavaScript 배우기</li>
+          <li>웹 프로젝트 만들기</li>
+        </ol>
+      </article>
+    </section>
+    <section id="schedule">
+      <h2>3. 학습 계획</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>주차</th>
+            <th>학습 내용</th>
+            <th>상태</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1주차</td>
+            <td>HTML 기본</td>
+            <td>학습 완료</td>
+          </tr>
+          <tr>
+            <td>2주차</td>
+            <td>CSS 기본</td>
+            <td>학습 예정</td>
+          </tr>
+          <tr>
+            <td>3주차</td>
+            <td>JavaScript 기본</td>
+            <td>학습 예정</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="contact">
+      <h2>4. 문의하기</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>문의 양식</legend>
+
+          <p>
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="이름을 입력하세요">
+          </p >
+
+          <p>
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" name="password">
+          </p >
+
+          <p>
+            <label for="email">이메일</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com">
+          </p >
+
+          <p>
+            <label for="birth">생년월일</label>
+            <input type="date" id="birth" name="birth">
+          </p >
+
+          <p>
+            <label for="grade">학년</label>
+            <select id="grade" name="grade">
+              <option>1학년</option>
+              <option>2학년</option>
+              <option>3학년</option>
+              <option>4학년</option>
+            </select>
+          </p >
+
+          <p>관심 분야</p >
+          <label><input type="radio" name="field" value="frontend"> 프론트엔드</label>
+          <label><input type="radio" name="field" value="backend"> 백엔드</label>
+          <label><input type="radio" name="field" value="ai"> AI</label>
+
+          <p>배우고 싶은 기술</p >
+          <label><input type="checkbox" name="skill" value="html"> HTML</label>
+          <label><input type="checkbox" name="skill" value="css"> CSS</label>
+          <label><input type="checkbox" name="skill" value="javascript"> JavaScript</label>
+
+          <p>
+            <label for="level">웹 프로그래밍 수준</label>
+            <select id="level" name="level">
+              <option>초급</option>
+              <option>중급</option>
+              <option>고급</option>
+            </select>
+          </p >
+
+          <p>
+            <label for="content">문의 내용</label><br>
+            <textarea id="content" name="content" rows="5" cols="40" placeholder="문의 내용을 입력하세요"></textarea>
+          </p >
+
+          <p>
+            <input type="submit" value="제출">
+            <input type="reset" value="초기화">
+          </p >
+
+        </fieldset>
+      </form>
+    </section>
+    <aside>
+      <h3>참고 사이트</h3>
+      <p>HTML에 대해 더 공부하고 싶다면?</p >
+      <ul>
+        <li><a href="http://developer.mozilla.org/ko/docs/Web/HTML ">MDN HTML</a ></li>
+        <li><a href="https://www.w3schools.com/html/">W3Schools HTML</a ></li>
+      </ul>
+    </aside>
+    <footer>
+    <p>Copyright © 2026 Web Programming</p >
+    <p>HTML 종합 실습 페이지</p >
+  </footer>
+  </main></body>
+</html>
