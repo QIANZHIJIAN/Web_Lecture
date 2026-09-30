@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>나의 웹페이지</title>
+    <style>
+        body  {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        ｝
+        header {
+            background-color: #1a237e;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            letter-spacing: 5px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-style: italic;
+            font-size: 18px;
+        }
+
+        .profile {
+            background-color: #b3e5fc;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #999;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border: 5px solid white;
+            margin-right: 30px;
+        }
+
+        .profile-text h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .skills {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .skills h2 {
+            color: #1a237e;
+            border-bottom: 2px solid #1a237e;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .skill {
+            padding: 8px 20px;
+            margin: 5px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .about {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .about h2 {
+            color: #1a237e;
+            border-bottom: 2px solid #1a237e;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+
+        .contact h2 {
+            color: #1a237e;
+            border-bottom: 2px solid #1a237e;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .contact label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .contact input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .contact input[type="text"] {
+            background-color: #fff9c4;
+        }
+
+        .contact input[type="email"] {
+            background-color: #e0f7fa;
+        }
+
+        .contact button {
+            margin-top: 15px;
+            padding: 12px 30px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MY PROFILE</h1>
+        <p>Web Programming Practice</p >
+    </header>
+
+    <section class="profile">
+        <img src="me.jpg" alt="내 사진">
+        <div class="profile-text">
+            <h2>전지건</h2>
+            <p>전공：컴퓨터 소프트웨어</p >
+            <p>관심 분야：Web / AI / XR</p >
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2>기술 주목</h2>
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Git</span>
+    </section>
+
+    <section class="about">
+        <h2>자기소개</h2>
+        <p>안녕하세요, 저는 컴퓨터 소프트웨어 개발자 전지건입니다. 현재 web프로그래밍을 공부하며 HTML과 CSS로 웹페이지 구조와 웹 디자인 구현 방법을 익히고 있습니다. 앞으로 JavaScript와 React도 공부할 예정입니다. 저에게는 쉽지 않겠지만, 열심히 해보겠습니다.</p >
+    </section>
+
+    <section class="contact">
+        <h2>저희에게 연락해주세요</h2>
+        <label>이름</label>
+        <input type="text" placeholder="이름">
+        <label>우편함</label>
+        <input type="email" placeholder="이메일을 입력해 주세요">
+        <button>제출</button>
+    </section>
+
+    <footer>
+        <p>2026 Web Programming Practice | 전지건</p >
+    </footer>
+</body>
+</html>
