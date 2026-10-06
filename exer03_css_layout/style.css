@@ -1,0 +1,42 @@
+.container_01 {
+    overflow: hidden;
+}
+
+.item_01 {
+    float: left;
+    margin: 0 3px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.margin_02 {
+    margin: 0 auto;
+    width: 500px;
+}
+body {
+    width: 500px;
+    margin: 10px auto;
+}
+
+#middle {
+    overflow: hidden;
+}
+
+#left {
+    float: left;
+    width: 150px;
+    background: red;
+}
+
+#right {
+    float: right;
+    width: 350px;
+    background: blue;
+}
+
+#top {
+    background: green;
+}
+
+#bottom {
+    background: purple;
+}
