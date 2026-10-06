@@ -6,7 +6,7 @@
     float: left;
     margin: 0 3px;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid rgb(241, 10, 10);
 }
 .margin_02 {
     margin: 0 auto;
@@ -24,19 +24,19 @@ body {
 #left {
     float: left;
     width: 150px;
-    background: red;
+    background: rgb(106, 86, 155);
 }
 
 #right {
     float: right;
     width: 350px;
-    background: blue;
+    background: rgb(203, 203, 214);
 }
 
 #top {
-    background: green;
+    background: rgb(16, 215, 16);
 }
 
 #bottom {
-    background: purple;
+    background: rgb(176, 152, 176);
 }
