@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse Event</title>
+</head>
+<body style="padding: 20px;">
+    <!-- 定义一个框，一开始背景是浅灰色 -->
+    <div id="box" style="width:300px; height:150px; background-color: lightgray; text-align:center; line-height: 150px;">
+        请把鼠标移上来！
+    </div>
+
+    <script>
+        let box = document.querySelector("#box");
+
+        // 1. 鼠标移入 (mouseover)
+        box.addEventListener("mouseover", function() {
+            box.style.backgroundColor = "skyblue";
+            box.textContent = "鼠标移入啦！";
+        });
+
+        // 2. 鼠标移出 (mouseout)
+        box.addEventListener("mouseout", function() {
+            box.style.backgroundColor = "lightgray";
+            box.textContent = "请把鼠标移上来！";
+        });
+    </script>
+</body>
+</html>

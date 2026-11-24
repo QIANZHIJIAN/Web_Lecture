@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attribute Control</title>
+    <script>
+        window.onload = function() {
+            // 1. 获取页面上 id 为 image 的元素
+            let image = document.getElementById('image');
+
+            // 2. 修改它的属性（对应 PPT 第 11 页）
+            // 这里我用了一个可以生成 300x200 占位图的链接
+            image.src = 'https://via.placeholder.com/300x200';
+            image.width = 300;
+            image.height = 200;
+        };
+    </script>
+</head>
+<body>
+    <!-- 页面一开始只有一个没有图片的空 img 标签 -->
+    < img id="image">
+</body>
+</html>
