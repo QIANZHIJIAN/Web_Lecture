@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Basic</title>
+    <script>
+        window.onload = function() {
+            let output = '';
+            for (let i = 0; i < 10; i++) {
+                output += '<h1>Header - ' + i + '</h1>';
+            }
+            
+            // 这里我们先使用 PPT 里的 innerHTML 方式
+            document.body.innerHTML = output;
+        };
+    </script>
+</head>
+<body>
+
+</body>
+</html>

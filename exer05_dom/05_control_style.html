@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Style Control</title>
+    <script>
+        window.onload = function() {
+            let output = '';
+            // 循环 256 次，生成 256 个 div 元素
+            for (let i = 0; i < 256; i++) {
+                output += '<div></div>';
+            }
+            // 将 256 个 div 放入 body 中
+            document.body.innerHTML = output;
+
+            // 获取所有的 div
+            let divs = document.querySelectorAll('div');
+            
+            // 遍历每一个 div，给它们设置样式
+            for (let i = 0; i < divs.length; i++) {
+                let div = divs[i];
+                // 设置高度
+                div.style.height = '2px'; 
+                // 设置背景颜色。i 从 0 到 255，颜色会从黑色渐变到白色
+                div.style.background = 'rgb(' + i + ',' + i + ',' + i + ')';
+            }
+        };
+    </script>
+    <script>
+        window.onload = function() {
+            // 选中 body 元素
+            let body = document.body;
+            
+            // 使用 setAttribute 设置一个非标准的自定义属性
+            body.setAttribute('data-message', 'Hello DOM!');
+            
+            // 使用 getAttribute 获取这个属性，并在网页上弹窗显示，确认成功
+            let msg = body.getAttribute('data-message');
+            alert("我获取到的属性是: " + msg);
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>
